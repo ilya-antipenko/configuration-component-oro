@@ -1,0 +1,6 @@
+services:
+    contributors.configuration.provider:
+        class: ContributorsBundle\Configuration\ConfigurationProvider
+        public: true
+        arguments:
+            - '%kernel.bundles%'
