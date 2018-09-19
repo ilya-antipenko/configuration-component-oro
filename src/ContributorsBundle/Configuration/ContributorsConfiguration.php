@@ -23,6 +23,7 @@ class ContributorsConfiguration implements ConfigurationInterface
                             ->scalarNode('name')->isRequired()->end()
                             ->scalarNode('email')->isRequired()->end()
                             ->scalarNode('github')->end()
+                            ->scalarNode('company')->defaultValue('Oro Inc.')->end()
                         ->end()
                     ->end()
                 ->end()
