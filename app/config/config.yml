@@ -69,3 +69,9 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
+
+app:
+    presenter:
+        first_name: Ilya
+        last_name: Antipenko
+#        company: test
