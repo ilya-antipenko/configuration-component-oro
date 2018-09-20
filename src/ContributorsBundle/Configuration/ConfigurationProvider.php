@@ -2,7 +2,6 @@
 
 namespace ContributorsBundle\Configuration;
 
-use ContributorsBundle\Configuration\ContributorsConfiguration;
 use Doctrine\Common\Cache\CacheProvider;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
