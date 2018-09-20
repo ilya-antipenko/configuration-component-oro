@@ -5,6 +5,13 @@ services:
         arguments:
             - '%kernel.cache_dir%/dist'
 
+    contributors.configuration.povidere.cache_cleaner:
+        class: ContributorsBundle\Cache\ContributorsCacheCleaner
+        arguments:
+            - '@contributors.configuration.provider.cache'
+        tags:
+            - { name: kernel.cache_clearer }
+
     contributors.configuration.provider:
         class: ContributorsBundle\Configuration\ConfigurationProvider
         public: true
