@@ -1,6 +1,13 @@
 services:
+
+    contributors.configuration.provider.cache:
+        class: Doctrine\Common\Cache\PhpFileCache
+        arguments:
+            - '%kernel.cache_dir%/dist'
+
     contributors.configuration.provider:
         class: ContributorsBundle\Configuration\ConfigurationProvider
         public: true
         arguments:
             - '%kernel.bundles%'
+            - '@contributors.configuration.provider.cache'
